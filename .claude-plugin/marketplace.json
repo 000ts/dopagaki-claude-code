@@ -1,0 +1,13 @@
+{
+  "name": "dopagaki",
+  "owner": {
+    "name": "000ts"
+  },
+  "plugins": [
+    {
+      "name": "dopagaki",
+      "source": "./"
+    }
+  ],
+  "description": "Rainbow mods for Claude Code"
+}

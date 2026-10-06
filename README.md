@@ -4,12 +4,22 @@ Claude Code の画面を虹色にする Mod です。テーマは「見ている
 
 本体のファイルは書き換えません。描画を差し替えるのは Claude Code の Mod(plugin の function hooks)の仕組みです。そのため、バックアップを取る必要も、アップデートのたびに当て直す必要もありません。
 
-## インストール
+## 一発インストール(Mod + 虹色ステータスライン)
+
+ターミナルで次の 1 行を実行します。
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/000ts/dopagaki-claude-code/main/install.sh | bash
+```
+
+dopagaki Mod と、虹色のステータスライン([claude-code-dopagaki-line](https://github.com/000ts/claude-code-dopagaki-line))をまとめて入れます。`~/.claude/settings.json` の `statusLine` を書き換えます。書き換え前のファイルは `settings.json.<日時>.bak` として残ります。新しく開いたセッションから有効になります。
+
+## Mod だけを入れる
 
 Claude Code のプロンプトで次を実行します。
 
 ```
-/plugin install dopagaki --marketplace 000ts/dopagaki
+/plugin install dopagaki --marketplace 000ts/dopagaki-claude-code
 ```
 
 `Add marketplace?` には `y`、スコープは user のまま Enter。以後のすべてのセッションで有効になります。

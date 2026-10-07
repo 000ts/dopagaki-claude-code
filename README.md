@@ -12,6 +12,12 @@ Claude Code の画面を虹色にする Mod です。テーマは「見ている
 curl -fsSL https://raw.githubusercontent.com/000ts/dopagaki-claude-code/main/install.sh | bash
 ```
 
+Windows では PowerShell で次の 1 行を実行します。Python 3 が必要です。
+
+```powershell
+irm https://raw.githubusercontent.com/000ts/dopagaki-claude-code/main/install.ps1 | iex
+```
+
 dopagaki Mod と、虹色のステータスライン([claude-code-dopagaki-line](https://github.com/000ts/claude-code-dopagaki-line))をまとめて入れます。`~/.claude/settings.json` の `statusLine` を書き換えます。書き換え前のファイルは `settings.json.<日時>.bak` として残ります。新しく開いたセッションから有効になります。
 
 ## Mod だけを入れる

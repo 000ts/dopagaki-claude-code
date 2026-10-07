@@ -12,7 +12,7 @@ Claude Code の画面を虹色にする Mod です。テーマは「見ている
 curl -fsSL https://raw.githubusercontent.com/000ts/dopagaki-claude-code/main/install.sh | bash
 ```
 
-Windows では PowerShell で次の 1 行を実行します。Python 3 が必要です。
+Windows では PowerShell で次の 1 行を実行します。Python 3 と Git が必要です(`winget install -e --id Python.Python.3.14` / `winget install -e --id Git.Git`)。
 
 ```powershell
 irm https://raw.githubusercontent.com/000ts/dopagaki-claude-code/main/install.ps1 | iex

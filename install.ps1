@@ -16,7 +16,9 @@
   Write-Host '== dopagaki installer =='
 
   Write-Host '==> Checking tools'
-  if (-not (Get-Command claude -ErrorAction SilentlyContinue)) { throw "'claude' is required but not found" }
+  foreach ($cmd in 'claude', 'git') {
+    if (-not (Get-Command $cmd -ErrorAction SilentlyContinue)) { throw "'$cmd' is required but not found" }
+  }
   # The Microsoft Store "python" alias resolves but doesn't run Python, so probe by executing.
   # 3.7+ is needed for sys.stdout.reconfigure in the status line.
   $Python = $null
